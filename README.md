@@ -32,7 +32,7 @@ The top level resource object in "data" MUST be of type "project". The id SHOULD
 be the name of the vendor's project and the name SHOULD not cause a conflict
 with other vendors. The project resource MUST contain the attributes "releases"
 which is a list of objects. Each object MUST contain release, format, flavor,
-refs, checksums, date, size.
+href, checksums, date, size.
 
 The "meta" object MUST either provide a signature member that points to a
 detached gpg signature for the release information file or the full release
@@ -51,7 +51,7 @@ Example:
         "format": "iso",
         "flavor": "server",
         "architecture": "amd64",
-        "refs": "http://releases.ubuntu.com/17.04/ubuntu-17.04-server-amd64.iso",
+        "href": "http://releases.ubuntu.com/17.04/ubuntu-17.04-server-amd64.iso",
         "size": 718274560,
         "date": "2017-04-12 03:20:00",
         "checksums": {
@@ -100,7 +100,7 @@ The flavor of the image. It MUST be one of
 Please provide a patch for this specification in case a flavor is missing to
 unify the names used here.
 
-### refs
+### href
 
 The URL for downloading the image.
 
@@ -112,7 +112,7 @@ checksums must be an object that must one or more of these members:
 * sha1
 * sha256
 
-Each member contains a string with the checksum for the file specified in refs.
+Each member contains a string with the checksum for the file specified in href.
 
 Please provide a patch for this specification in case a checksum format is
 missing.
