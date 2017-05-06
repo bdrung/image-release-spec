@@ -69,7 +69,7 @@ Example:
 }
 ```
 
-### release
+### version
 
 The major release of the project. Do not specify minor release numbers of
 image build version in here.
