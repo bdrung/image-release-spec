@@ -106,11 +106,14 @@ The URL for downloading the image.
 
 ### checksums
 
-checksums must be an object that must one or more of these members:
+checksums MUST be an object that MUST include one or more of these members:
 
+* sha256
+* sha3
+
+and MAY include one or more of these members:
 * md5
 * sha1
-* sha256
 
 Each member contains a string with the checksum for the file specified in href.
 
