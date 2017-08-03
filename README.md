@@ -2,7 +2,12 @@
 
 ## Status
 
-The specification is currently an initial draft.
+The specification is an initial draft and deprecated in favor of the
+[Simple Sync Format](http://bazaar.launchpad.net/~simplestreams-dev/simplestreams/trunk/view/head:/doc/README)
+which was designed and implemented by Ubuntu.
+
+Ubuntu's cloud images for download can be found on
+https://cloud-images.ubuntu.com/releases/streams/v1/com.ubuntu.cloud:released:download.json
 
 ## Introduction
 
