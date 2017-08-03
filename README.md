@@ -9,6 +9,12 @@ which was designed and implemented by Ubuntu.
 Ubuntu's cloud images for download can be found on
 https://cloud-images.ubuntu.com/releases/streams/v1/com.ubuntu.cloud:released:download.json
 
+To query Ubuntu's cloud images on the command line, you can run
+
+```
+sstream-query --max=1 --keyring=/usr/share/keyrings/ubuntu-cloudimage-keyring.gpg --output-format="%(release)s %(version_name)s %(ftype)s %(sha256)s %(item_url)s" https://cloud-images.ubuntu.com/releases ftype=disk1.img supported=True
+```
+
 ## Introduction
 
 Several projects/vendors publish releases of their GNU/Linux distributions on
